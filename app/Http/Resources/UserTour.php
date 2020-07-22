@@ -16,7 +16,7 @@ class UserTour extends JsonResource
     {
         return [
             'id' => $this->id,
-            'UserId' => $this->UserId,
+            /*'UserId' => $this->UserId,*/
             'TourInfo' => $this->TourInfo,
             'StartAt' => $this->StartAt,
             'EndAt' => $this->EndAt,
