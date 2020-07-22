@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b1d93c60-1dbf-47a1-b88f-f9dc8c6b0652" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.blueprint" beforeDir="false" afterPath="$PROJECT_DIR$/.blueprint" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/UserInfo.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/UserInfo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_07_22_194637_create_user_infos_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_07_22_194637_create_user_infos_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_07_22_194638_create_user_tickets_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_07_22_194638_create_user_tickets_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_07_22_194639_create_user_tours_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_07_22_194639_create_user_tours_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/draft.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/draft.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Resources/UserInfo.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/UserInfo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Resources/UserTicket.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/UserTicket.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/UserTicket.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/UserTicket.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/UserTour.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/UserTour.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -247,7 +243,7 @@
       <workItem from="1595340444442" duration="3025000" />
       <workItem from="1595345937097" duration="27928000" />
       <workItem from="1595439804789" duration="5474000" />
-      <workItem from="1595447920953" duration="1698000" />
+      <workItem from="1595447920953" duration="2433000" />
     </task>
     <servers />
   </component>

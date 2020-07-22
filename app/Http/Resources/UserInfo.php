@@ -23,7 +23,7 @@ class UserInfo extends JsonResource
             'Passport' => $this->Passport,
             'Account' => $this->user->select("phone", "name", "email")->first(),
             'Tickets' => new UserTicketCollection($this->tickets),
-            'Tours' => new UserTicketCollection($this->tours)
+           'Tours' => new UserTourCollection($this->tours)
 
         ];
     }

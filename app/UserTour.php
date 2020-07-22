@@ -13,6 +13,7 @@ class UserTour extends Model
      */
     protected $fillable = [
         'UserId',
+        'TourId',
         'TourInfo',
         'StartAt',
         'EndAt',
@@ -27,6 +28,7 @@ class UserTour extends Model
     protected $casts = [
         'id' => 'integer',
         'UserId' => 'integer',
+        'TourId' => 'integer',
         'TourInfo' => 'array',
         'Comment' => 'array',
     ];
@@ -42,8 +44,5 @@ class UserTour extends Model
     ];
 
 
-    public function userId()
-    {
-        return $this->belongsTo(\App\User::class);
-    }
+
 }

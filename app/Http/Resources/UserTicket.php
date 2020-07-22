@@ -25,6 +25,7 @@ class UserTicket extends JsonResource
             'DepartureAt' => $this->DepartureAt,
             'DepartureFrom' => $this->DepartureFrom,
             'deleted_at' => $this->deleted_at,
+
         ];
     }
 }

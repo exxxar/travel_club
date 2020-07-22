@@ -47,18 +47,4 @@ class UserTicket extends Model
     ];
 
 
-    public function userTour()
-    {
-        return $this->hasOne(\App\UserTour::class);
-    }
-
-    public function userId()
-    {
-        return $this->belongsTo(\App\User::class);
-    }
-
-    public function tourId()
-    {
-        return $this->belongsTo(\App\UserTour::class);
-    }
 }
