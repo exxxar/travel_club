@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b1d93c60-1dbf-47a1-b88f-f9dc8c6b0652" name="Default Changelist" comment="" />
+    <list default="true" id="b1d93c60-1dbf-47a1-b88f-f9dc8c6b0652" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.blueprint" beforeDir="false" afterPath="$PROJECT_DIR$/.blueprint" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/UserInfo.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/UserInfo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_07_22_194637_create_user_infos_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_07_22_194637_create_user_infos_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_07_22_194638_create_user_tickets_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_07_22_194638_create_user_tickets_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_07_22_194639_create_user_tours_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_07_22_194639_create_user_tours_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/draft.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/draft.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +22,16 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="D:\projects\travelclub\.idea" />
+      </set>
+    </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -174,6 +194,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1ezfRAVOw50q23ljXiFpCtW6f5L" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -182,16 +203,16 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Resources" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\projects\travelclub\app\Http\Resources" />
       <recent name="D:\projects\travelclub\app" />
       <recent name="D:\projects\travelclub" />
       <recent name="D:\projects\travelclub\app\Providers" />
       <recent name="D:\projects\travelclub\database\seeds" />
-      <recent name="D:\projects\travelclub\database\migrations" />
     </key>
   </component>
   <component name="RunManager">
@@ -225,7 +246,8 @@
       <workItem from="1595329332666" duration="2598000" />
       <workItem from="1595340444442" duration="3025000" />
       <workItem from="1595345937097" duration="27928000" />
-      <workItem from="1595439804789" duration="5055000" />
+      <workItem from="1595439804789" duration="5474000" />
+      <workItem from="1595447920953" duration="1698000" />
     </task>
     <servers />
   </component>
@@ -241,13 +263,13 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="93" y="93" width="1350" height="678" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.864@0.0.1536.864" timestamp="1595447360560" />
-    <state x="477" y="261" key="com.intellij.ide.util.TipDialog" timestamp="1595345936926">
+    <state x="477" y="261" key="com.intellij.ide.util.TipDialog" timestamp="1595447920653">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="477" y="261" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1595345936926" />
-    <state x="425" y="199" key="run.anything.popup" timestamp="1595351259090">
+    <state x="477" y="261" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1595447920653" />
+    <state x="425" y="199" key="run.anything.popup" timestamp="1595448593032">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="425" y="199" key="run.anything.popup/0.0.1536.864@0.0.1536.864" timestamp="1595351259090" />
+    <state x="425" y="199" key="run.anything.popup/0.0.1536.864@0.0.1536.864" timestamp="1595448593032" />
   </component>
 </project>

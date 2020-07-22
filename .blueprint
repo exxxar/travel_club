@@ -1,16 +1,18 @@
 created:
-    - database/migrations/2020_07_22_194923_create_user_infos_table.php
-    - database/migrations/2020_07_22_194924_create_user_tickets_table.php
-    - database/migrations/2020_07_22_194925_create_user_tours_table.php
-    - app/UserInfo.php
-    - app/UserTicket.php
-    - app/UserTour.php
-    - database/factories/UserInfoFactory.php
-    - database/factories/UserTicketFactory.php
-    - database/factories/UserTourFactory.php
-    - database/seeds/UserInfoSeeder.php
-    - database/seeds/UserTicketSeeder.php
-    - database/seeds/UserTourSeeder.php
+    - app/Http/Controllers/UserTicketController.php
+    - app/Http/Controllers/UserTourController.php
+    - app/Http/Requests/UserTicketStoreRequest.php
+    - app/Http/Requests/UserTicketUpdateRequest.php
+    - app/Http/Requests/UserTourStoreRequest.php
+    - app/Http/Requests/UserTourUpdateRequest.php
+    - app/Http/Resources/UserTicketCollection.php
+    - app/Http/Resources/UserTicket.php
+    - app/Http/Resources/UserTourCollection.php
+    - app/Http/Resources/UserTour.php
+    - tests/Feature/Http/Controllers/UserTicketControllerTest.php
+    - tests/Feature/Http/Controllers/UserTourControllerTest.php
+updated:
+    - routes/api.php
 models:
     Country: { id: id, CountryId: integer, Name: 'string:100 default:''''', Alias: 'string:100 default:''''', OriginalName: 'string:100 default:''''', Flags: 'tinyInteger default:''0''', Rank: 'tinyInteger default:''0''', HasTickets: 'boolean default:false', HotelIsNotInStop: 'boolean default:false', IsProVisa: 'boolean default:false', IsVisa: 'boolean default:false', TicketsIncluded: 'boolean default:false', relationships: { hasMany: 'DepartCity, City' } }
     DepartCity: { id: id, DepartCityId: integer, Name: 'string:100 default:''''', CountryId: 'id foreign:country', Default: 'boolean default:true', DescriptionUrl: 'string:500 nullable', IsPopular: 'boolean default:true', OriginalName: 'string:500 nullable', ParentId: 'id foreign:depart_city nullable', relationships: { belongsTo: Country } }

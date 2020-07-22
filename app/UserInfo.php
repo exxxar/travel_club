@@ -31,6 +31,16 @@ class UserInfo extends Model
 
     public function user()
     {
-        return $this->hasOne(\App\User::class);
+        return $this->hasOne(\App\User::class,'id','UserId');
+    }
+
+    public function tours()
+    {
+        return $this->hasMany(\App\UserTour::class,'UserId','UserId');
+    }
+
+    public function tickets()
+    {
+        return $this->hasMany(\App\UserTicket::class,'UserId','UserId');
     }
 }

@@ -13,10 +13,11 @@ class CreateUserTicketsTable extends Migration
      */
     public function up()
     {
+        Schema::disableForeignKeyConstraints();
         Schema::create('user_tickets', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('UserId')->constrained('users')->nullOnDelete();
-            $table->foreignId('TourId')->constrained('user_tours')->nullOnDelete();
+            $table->unsignedInteger('UserId')->nullable();
+            $table->unsignedInteger('TourId')->nullable();
             $table->json('TicketInfo');
             $table->double('TotalPayment')->default(0.0);
             $table->double('CurrentPayment')->default(0.0);
@@ -26,6 +27,7 @@ class CreateUserTicketsTable extends Migration
             $table->timestamp('deleted_at')->nullable();
             $table->timestamps();
         });
+        Schema::enableForeignKeyConstraints();
     }
 
     /**

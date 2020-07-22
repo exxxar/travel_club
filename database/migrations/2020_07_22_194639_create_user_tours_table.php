@@ -13,15 +13,17 @@ class CreateUserToursTable extends Migration
      */
     public function up()
     {
+        Schema::disableForeignKeyConstraints();
         Schema::create('user_tours', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('UserId')->constrained('users')->nullOnDelete();
+            $table->unsignedInteger('UserId')->nullable();
             $table->json('TourInfo');
             $table->timestamp('StartAt')->nullable();
             $table->timestamp('EndAt')->nullable();
             $table->json('Comment');
             $table->timestamps();
         });
+        Schema::enableForeignKeyConstraints();
     }
 
     /**

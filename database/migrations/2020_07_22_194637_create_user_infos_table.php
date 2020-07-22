@@ -13,8 +13,10 @@ class CreateUserInfosTable extends Migration
      */
     public function up()
     {
+        Schema::disableForeignKeyConstraints();
         Schema::create('user_infos', function (Blueprint $table) {
             $table->id();
+            $table->unsignedInteger('UserId')->nullable();
             $table->string('FullName', 100)->default('');
             $table->integer('Age')->default(18);
             $table->tinyInteger('Sex')->default(0);
@@ -22,6 +24,7 @@ class CreateUserInfosTable extends Migration
             $table->string('Passport', 100)->default('');
             $table->timestamps();
         });
+        Schema::enableForeignKeyConstraints();
     }
 
     /**
