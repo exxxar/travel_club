@@ -1,0 +1,27 @@
+created:
+    - database/migrations/2020_07_22_194923_create_user_infos_table.php
+    - database/migrations/2020_07_22_194924_create_user_tickets_table.php
+    - database/migrations/2020_07_22_194925_create_user_tours_table.php
+    - app/UserInfo.php
+    - app/UserTicket.php
+    - app/UserTour.php
+    - database/factories/UserInfoFactory.php
+    - database/factories/UserTicketFactory.php
+    - database/factories/UserTourFactory.php
+    - database/seeds/UserInfoSeeder.php
+    - database/seeds/UserTicketSeeder.php
+    - database/seeds/UserTourSeeder.php
+models:
+    Country: { id: id, CountryId: integer, Name: 'string:100 default:''''', Alias: 'string:100 default:''''', OriginalName: 'string:100 default:''''', Flags: 'tinyInteger default:''0''', Rank: 'tinyInteger default:''0''', HasTickets: 'boolean default:false', HotelIsNotInStop: 'boolean default:false', IsProVisa: 'boolean default:false', IsVisa: 'boolean default:false', TicketsIncluded: 'boolean default:false', relationships: { hasMany: 'DepartCity, City' } }
+    DepartCity: { id: id, DepartCityId: integer, Name: 'string:100 default:''''', CountryId: 'id foreign:country', Default: 'boolean default:true', DescriptionUrl: 'string:500 nullable', IsPopular: 'boolean default:true', OriginalName: 'string:500 nullable', ParentId: 'id foreign:depart_city nullable', relationships: { belongsTo: Country } }
+    City: { id: id, CityId: integer, Name: 'string:100 default:''''', Default: 'boolean default:true', DescriptionUrl: 'string:500 default:''''', IsPopular: 'boolean default:true', ParentId: 'id foreign:city nullable', relationships: { belongsTo: Country } }
+    Meal: { id: id, MealId: integer, Name: 'string:100 default:''''' }
+    Hotel: { id: id, HotelId: integer, Name: 'string:100 default:''''', CommonRate: 'integer default:''0''', IsInBonusProgram: 'boolean default:true', PhotosCount: 'integer default:''0''', PopularityLevel: 'integer default:''0''', Rate: 'double default:''0''', SearchCount: 'integer default:''0''', StarId: 'id foreign:hotelstar nullable', StarName: 'string:100 default:''''', TownId: 'id foreign:town' }
+    HotelStar: { id: id, HotelStarsId: integer, Name: 'string:100 default:''''' }
+    TourOperator: { id: id, TourOperatorId: integer, Name: 'string:100 default:''''', Enabled: 'boolean default:true' }
+    TourDate: { id: id, date: 'string:100' }
+    FinSecurityDocument: { id: id, DateOfFinSecurityFrom: 'string:100 default:''''', DateOfFinSecurityTo: 'string:100 default:''''', DocumentDate: 'string:100 default:''''', DocumentNumber: 'string:100 default:''''', FinSecurityAmount: 'integer default:''0''', OrgAddress: 'string:100 default:''''', OrgName: 'string:100 default:''''', OrgPostAddress: 'string:100 default:''''', WayToFinSecurity: 'string:100 default:''''', SourseAssuranceId: 'id foreign:sourseassurance' }
+    SourseAssurance: { id: id, Name: 'string:100 default:''''', NameShort: 'string:100 default:''''', Number: 'string:100 default:''''', PhysicalAddress: 'string:100 default:''''', PostAddress: 'string:100 default:''''', Site: 'string:100 default:''''' }
+    UserInfo: { id: id, FullName: 'string:100 default:''''', Age: 'integer default:18', Sex: 'integer:1 default:0', Birthday: 'string:100 default:''''', Passport: 'string:100 default:''''', relationships: { hasOne: User } }
+    UserTicket: { id: id, UserId: 'id foreign:users.id', TourId: 'id foreign:user_tours.id', TicketInfo: json, TotalPayment: 'double default:''0.0''', CurrentPayment: 'double default:''0.0''', ContactPhone: 'string:100 default:''', DepartureAt: 'nullable timestamp', DepartureFrom: 'string:100 default:'''' nullable', deleted_at: 'nullable timestamp', relationships: { hasOne: UserTour } }
+    UserTour: { id: id, UserId: 'id foreign:users.id', TourInfo: json, StartAt: 'nullable timestamp', EndAt: 'nullable timestamp', Comment: json }

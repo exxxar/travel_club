@@ -1,0 +1,36 @@
+models:
+  UserInfo:
+    id: id
+    FullName: string:100 default:''
+    Age: integer default:18
+    Sex: integer:1 default:0
+    Birthday: string:100 default:''
+    Passport: string:100 default:''
+    relationships:
+      hasOne: User
+
+  UserTicket:
+    id: id
+    UserId: id foreign:users.id
+    TourId: id foreign:user_tours.id
+    TicketInfo: json
+    TotalPayment: double default:'0.0'
+    CurrentPayment: double default:'0.0'
+    ContactPhone: string:100 default:'
+    DepartureAt : nullable timestamp
+    DepartureFrom : string:100 default:'' nullable
+    deleted_at: nullable timestamp
+    relationships:
+      hasOne: UserTour
+
+  UserTour:
+    id: id
+    UserId: id foreign:users.id
+    TourInfo: json
+    StartAt : nullable timestamp
+    EndAt : nullable timestamp
+    Comment: json
+
+
+seeders: UserInfo, UserTicket, UserTour
+
